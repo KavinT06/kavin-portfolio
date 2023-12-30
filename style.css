@@ -320,7 +320,7 @@ nav .fa-solid{
     #header {
       background-image: url(images/phone-background.png);
       background-size: 100%;
-      background-position: 10px 64px;
+      /* background-position: 10px 64px; */
     }
     .header-text{
         margin-top: 100%;
