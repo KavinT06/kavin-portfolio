@@ -14,12 +14,8 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    /* background-image: url(images/background.png); */
-    /* background-size: cover;
-    background-position: center; */
-    background-repeat:no-repeat;
-    background-size: 45%;
-    background-position: 885px 75px;
+    background-image: url(/PersonalPortfolio/images/4.jpg);
+    background:fixed;
 }
 .container{
     padding: 10px 10%;
