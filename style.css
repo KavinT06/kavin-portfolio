@@ -19,7 +19,7 @@ body{
     background-position: center;
     background-repeat:no-repeat;
     background-size: 45%;
-    background-position: 885px 75px;
+    background-position: 930px 75px;
 }
 .container{
     padding: 10px 10%;
@@ -319,7 +319,7 @@ nav .fa-solid{
 @media only screen and (max-width: 600px) {
     #header {
       background-image: url(images/phone-background.png);
-      background-size: 100%;
+      background-size: 0%;
       background-position: 10px 64px;
     }
     .header-text{
