@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2fb845ff03.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div id="header">
         <div class="container">
@@ -38,7 +40,12 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hello! I'm Kavin, a passionate Frontend Developer with some of experience. I thrive on creative challenges and enjoy pushing boundaries to create impactful work. With expertise in Web Development, I'm dedicated to delivering high-quality results. Collaborating with clients and professionals fuels my growth and exploration of new perspectives. I'm always seeking opportunities to refine my skills and stay ahead of emerging trends. Let's connect and create something amazing together!</p>
+                    <p>Hello! I'm Kavin, a passionate Frontend Developer with some of experience. I thrive on creative
+                        challenges and enjoy pushing boundaries to create impactful work. With expertise in Web
+                        Development, I'm dedicated to delivering high-quality results. Collaborating with clients and
+                        professionals fuels my growth and exploration of new perspectives. I'm always seeking
+                        opportunities to refine my skills and stay ahead of emerging trends. Let's connect and create
+                        something amazing together!</p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -77,13 +84,15 @@
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Stunning web designs that captivate and engage users, showcasing the perfect blend of creativity and functionality in every project.</p>
+                    <p>Stunning web designs that captivate and engage users, showcasing the perfect blend of creativity
+                        and functionality in every project.</p>
                     <a href="https://github.com/KavinT06">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-sharp fa-solid fa-crop"></i>
                     <h2>UI/UX Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos saepe accusamus aliquid ipsa fuga quod. Lorem ipsum dolor sit amet.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos saepe accusamus aliquid ipsa fuga
+                        quod. Lorem ipsum dolor sit amet.</p>
                     <a href="#">Learn more</a>
                 </div>
                 <!-- <div>
@@ -137,9 +146,12 @@
                     <p><i class="fa-solid fa-paper-plane"></i>itskavin47@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i>9514468372</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/kavin.kavin12345?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://instagram.com/kavin.__06?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/kavin-t-71288a21b"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/kavin.kavin12345?mibextid=ZbWKwL"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/kavin.__06?igshid=ZDdkNTZiNTM="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/kavin-t-71288a21b"><i
+                                class="fa-brands fa-linkedin"></i></a>
                     </div>
                     <a href="./assets/Resume.pdf" download class="btn btn2">Download CV</a>
                 </div>
@@ -165,11 +177,11 @@
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
@@ -180,10 +192,10 @@
     <script>
         var sidemeu = document.getElementById('sidemenu');
 
-        function openmenu(){
+        function openmenu() {
             sidemeu.style.right = "0";
         }
-        function closemenu(){
+        function closemenu() {
             sidemeu.style.right = "-200px";
         }
 
@@ -191,14 +203,14 @@
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbzBR5QzMPFsra_BexBkeFaptiwbWL6kFJVFMIjkFaYjbFUnIQEXLBep3oBuxKB9VOG2/exec'
         const form = document.forms['submit-to-google-sheet']
-      
+
         form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
         })
-      </script>
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script>
@@ -216,4 +228,5 @@
         });
     </script>
 </body>
+
 </html>
