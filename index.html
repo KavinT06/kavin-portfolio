@@ -111,16 +111,6 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="./images/5.jpg">
-                    <div class="layer">
-                        <h3>Netflix Clone</h3>
-                        <p>A sleek Netflix clone that lets users stream movies and TV shows with a responsive UI and
-                            smooth browsing experience.</p>
-                        <a href="https://netflix-clone-umber-zeta.vercel.app/"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
                     <img src="./images/6.jpg">
                     <div class="layer">
                         <h3>Quiz App</h3>
@@ -138,13 +128,22 @@
                                 class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
+                <div class="work">
+                    <img src="./images/5.jpg">
+                    <div class="layer">
+                        <h3>Netflix Clone</h3>
+                        <p>A sleek Netflix clone that lets users stream movies and TV shows with a responsive UI and
+                            smooth browsing experience.</p>
+                        <a href="https://netflix-clone-umber-zeta.vercel.app/"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
                 <div class="work hidden-work">
                     <img src="images/3.png">
                     <div class="layer">
                         <h3>Online Shopping app</h3>
                         <p>Under Construction!, we'll update you soon!</p>
-                        <a href="#"><i
-                                class="fa-solid fa-up-right-from-square"></i></a>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
                     </div>
                 </div>
             </div>
@@ -242,11 +241,11 @@
         });
     </script>
     <script>
-        document.getElementById('seeMoreBtn').addEventListener('click', function(e) {
+        document.getElementById('seeMoreBtn').addEventListener('click', function (e) {
             e.preventDefault();
             const hiddenWorks = document.querySelectorAll('.work.hidden-work');
             const isHidden = hiddenWorks[0].style.display !== 'block';
-            
+
             hiddenWorks.forEach(work => {
                 if (isHidden) {
                     work.style.display = 'block';
